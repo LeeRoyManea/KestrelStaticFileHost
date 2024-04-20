@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV ASPNETCORE_ENVIRONMENT=Production
 ENV ASPNETCORE_URLS="http://+:80"
 
-FROM mcr.microsoft.com/dotnet/sdk:latest.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:latest AS build
 WORKDIR /src
 COPY . ./
 
