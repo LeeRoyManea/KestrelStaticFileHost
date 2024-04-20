@@ -8,8 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Update="wwwroot\sample.html">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Content Update="wwwroot\index.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
 

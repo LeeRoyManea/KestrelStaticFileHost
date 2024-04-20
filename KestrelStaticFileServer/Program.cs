@@ -11,6 +11,13 @@ app.UseCors(policyBuilder => policyBuilder
     .AllowAnyMethod()
     .AllowAnyHeader());
 
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapFallbackToFile("index.html");
+});
+
 app.UseStaticFiles(new StaticFileOptions
 {
     OnPrepareResponse = context =>
